@@ -8,8 +8,30 @@
     <title>Ball's</title>
 </head>
 <body>
-    
+
+    <div class="fixed text-white ml-2 mt-2 select-none">
+        Score: <span id="score">0</span>
+    </div>
+
+    <div class="fixed inset-0 flex items-center justify-center" id="modelEl">
+        <div class="bg-white max-w-md w-full p-6 text-center">
+            <h1 class="text-4xl font-bold leading-none" id="BScore">0</h1>
+            <p class="text-sm text-gray-700 mb-4">Points</p>
+            <div>
+                <button 
+                    class="bg-blue-500 text-white w-full text-sm py-3 rounded-full"
+                    id="start"
+                >
+                    Start Game
+                </button>
+            </div>
+        </div>
+    </div>
+
     <canvas id="canvas_element"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./game/index.js" type="module"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
